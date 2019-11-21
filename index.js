@@ -19,10 +19,6 @@ function displayResults(responseJson) {
 
 function getRepos(username) {
   const url = `https://api.github.com/users/${username}/repos`;
-  const options = {
-
-  };
-
   fetch(url)
     .then(response => {
       if(response.ok) {
