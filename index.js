@@ -34,6 +34,7 @@ function getRepos(username) {
     .catch(error => {
       $('#js-errorMessage').text(`Something went wrong: ${error.message}`);
       $('#js-resultsList').empty();
+      $('#js-results').addClass('hidden');
     });
 }
 
